@@ -1,0 +1,4 @@
+# Projects accepted by wilp2p. Changes reload automatically while the server runs.
+namespace:project:
+  showRoomList: true
+  maxPlayers: 2
