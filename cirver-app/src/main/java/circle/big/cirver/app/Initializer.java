@@ -2,6 +2,7 @@ package circle.big.cirver.app;
 
 import circle.big.cirver.core.SystemHolder;
 import circle.big.cirver.core.SystemLifecycleException;
+import circle.big.webserver.CircleWebServerSystem;
 import wilpam.wilp2p.Wilp2pSystem;
 
 import java.io.PrintStream;
@@ -46,5 +47,6 @@ public final class Initializer {
 
     private static void registerSystems(SystemHolder holder) {
         holder.register("wilp2p", new Wilp2pSystem());
+        holder.register("webserver", new CircleWebServerSystem());
     }
 }

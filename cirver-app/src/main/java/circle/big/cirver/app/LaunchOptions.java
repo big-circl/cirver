@@ -8,7 +8,7 @@ record LaunchOptions(Path configDirectory, Path dataDirectory, boolean help) {
             Usage: cirver [--config-dir <directory>] [--data-dir <directory>] [--help]
 
               --config-dir, -c <directory>  Configuration root (default: ./config)
-              --data-dir, -d <directory>    Data root (default: /data)
+              --data-dir, -d <directory>    Data root (default: ./data)
               --help, -h                    Show this help without starting systems
 
             Each project reads its own subdirectory, for example:
@@ -17,7 +17,7 @@ record LaunchOptions(Path configDirectory, Path dataDirectory, boolean help) {
 
     static LaunchOptions parse(String[] args) {
         Path configDirectory = Path.of("config");
-        Path dataDirectory = Path.of("/data");
+        Path dataDirectory = Path.of("data");
         boolean help = false;
         boolean configSpecified = false;
         boolean dataSpecified = false;

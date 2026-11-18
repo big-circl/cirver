@@ -30,7 +30,7 @@ public final class SystemHolder implements AutoCloseable {
     private volatile State state = State.NEW;
 
     public SystemHolder() {
-        this(Path.of("config"), Path.of("/data"));
+        this(Path.of("config"), Path.of("data"));
     }
 
     public SystemHolder(Path configDirectory, Path dataDirectory) {
@@ -40,7 +40,7 @@ public final class SystemHolder implements AutoCloseable {
     }
 
     public SystemHolder(BiConsumer<Object, RuntimeException> eventExceptionHandler) {
-        this(Path.of("config"), Path.of("/data"), eventExceptionHandler);
+        this(Path.of("config"), Path.of("data"), eventExceptionHandler);
     }
 
     public SystemHolder(Path configDirectory, Path dataDirectory,

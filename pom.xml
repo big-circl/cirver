@@ -13,6 +13,7 @@
         <module>cirver-core</module>
         <module>system-wilp2p</module>
         <module>cirver-app</module>
+        <module>system-webserver</module>
     </modules>
 
     <properties>
